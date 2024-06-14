@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The get() Method</h2>
 
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+// Contoh map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// cara buat map manual
+const lagu = new Map();
+
+// cara menambahkan value
+lagu.set('wave', 100);
+lagu.set('earth', 150);
+lagu.set('kikibo', 200);
+
+// cara mengakses value dari map
+document.getElementById("demo").innerHTML = lagu.get("wave");
+
+// cara melihat size dari map
+document.getElementById("demo2").innerHTML = fruits.size;
+
+// cara menghapus value dari map
+fruits.delete("oranges");
+</script>
+
+</body>
+</html>
